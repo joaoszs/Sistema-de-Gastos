@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gastos</title>
+    <link rel="stylesheet" href="custom.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gastos</h1>
+    </header>
+
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+
+    <main>
+        <section class="container">
+            <form id="formulario-despesa">
+                <input type="text" id="descricao-despesa" placeholder="Descrição">
+                <input type="number" id="valor-despesa" placeholder="Valor" step="0.01">
+                <select id="categoria-despesa">
+                    <option value="Alimentação">Alimentação</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Moradia">Moradia</option>
+                    <option value="Lazer">Lazer</option>
+                </select>
+                <button type="submit">Adicionar Despesa <img src="images/salary.png" alt="icon2"></button>
+            </form>
+
+            <div id="lista-despesas">
+                <button class="editar" data-indice="0">Editar</button>
+                <button class="apagar" data-indice="0">Apagar</button>
+            </div>
+
+            <input type="text" id="campo-busca" placeholder="Buscar despesa">
+            <button type="button" id="button">Buscar <img src="images/loupe color.png" alt="icon3"></button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  Sistema de Gastos - João Lúcio Reis <img src="images/coding color.png" alt="icon"></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
